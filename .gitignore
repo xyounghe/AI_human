@@ -1,0 +1,22 @@
+__pycache__/
+build/
+*.egg-info/
+*.so
+# 默认忽略 mp4，但 README 演示素材需要进仓库
+*.mp4
+!assets/*.mp4
+
+tmp*
+trial*/
+
+data
+data_utils/face_tracking/3DMM/*
+data_utils/face_parsing/79999_iter.pth
+
+pretrained
+.DS_Store
+workspace/log_ngp.txt
+.idea
+models/
+*.log
+dist

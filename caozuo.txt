@@ -1,0 +1,15 @@
+python app.py --transport webrtc --model wav2lip --avatar_id wav2lip256_avatar2
+
+python app.py --transport webrtc --model wav2lip --avatar_id wav2lip256_avatar2 --tts gpt-sovits --TTS_SERVER http://127.0.0.1:9880 --REF_FILE ref.wav --REF_TEXT xxx
+
+python app.py --transport webrtc --model wav2lip --avatar_id wav2lip256_avatar2 --customvideo_config data/custom_config.json
+
+python app.py --tts qwentts --QWEN_MODEL_PATH Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice --QWEN_ATTN_IMPLEMENTATION sdpa
+
+
+
+
+
+
+cd wav2lip
+python genavatar.py --video_path xxx.mp4 --img_size 256 --avatar_id wav2lip256_avatar1 #img_size固定为256，与模型相关
