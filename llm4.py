@@ -59,8 +59,8 @@ def llm_response(message, nerfreal: BaseReal):
     # === 以下为LLM调用逻辑（非预设问题） ===
     # ✅ 修复：OpenAI 已在函数外部导入，可直接使用
     client = OpenAI(
-        api_key="sk-JsY4XLEgx0fXU0u161dOPsCWZZ3xcyl9Op14CwAqHfXMCRmN",
-        base_url="https://api.openai-proxy.org/v1",
+        api_key="your_api_key",
+        base_url="your_base_url",
     )
     end = time.perf_counter()
     logger.info(f"llm Time init: {end - start:.4f}s")

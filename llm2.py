@@ -8,10 +8,10 @@ def llm_response(message,nerfreal:BaseReal):
     from openai import OpenAI
     client = OpenAI(
         # 如果您没有配置环境变量，请在此处用您的API Key进行替换
-        api_key="sk-3d206377b64f4ab7aaa2a11889d8c7c1",
+        api_key="your_api_key",
         #api_key=os.getenv("DASHSCOPE_API_KEY"),
         # 填写DashScope SDK的base_url
-        base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
+        base_url="your_base_url",
     )
     end = time.perf_counter()
     logger.info(f"llm Time init: {end-start}s")

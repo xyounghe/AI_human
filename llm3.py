@@ -47,8 +47,8 @@ def llm_response(message, nerfreal: BaseReal):
     # === 以下为LLM调用逻辑（非预设问题） ===
     # ✅ 修复：OpenAI 已在函数外部导入，可直接使用
     client = OpenAI(
-        api_key="sk-3d206377b64f4ab7aaa2a11889d8c7c1",
-        base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
+        api_key="your_api_key",
+        base_url="your_base_url",
     )
     end = time.perf_counter()
     logger.info(f"llm Time init: {end - start:.4f}s")
